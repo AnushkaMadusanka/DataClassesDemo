@@ -27,5 +27,9 @@ class MainActivity : AppCompatActivity() {
         Log.i("MyTAG", "Age of ${student1.name} is ${student1.age}")
         Log.i("MyTAG", "Email of ${student2.name} is ${student2.email}")
 
+        //coping data objects
+        val student3 = student1.copy(age = 23)
+        Log.i("MyTAG", "Age of copied ${student3.name} is ${student3.age}")
+
     }
 }
