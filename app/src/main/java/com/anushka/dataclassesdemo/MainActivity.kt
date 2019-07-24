@@ -31,5 +31,13 @@ class MainActivity : AppCompatActivity() {
         val student3 = student1.copy(age = 23)
         Log.i("MyTAG", "Age of copied ${student3.name} is ${student3.age}")
 
+        //destructuring student2
+        val name = student2.component1() // this will give the String name
+        val email = student2.component2() // this will give the String email
+        val age = student2.component3() // this will give the Int age
+
+        Log.i("MyTAG", "de structured $name is $age")
+
+        
     }
 }
