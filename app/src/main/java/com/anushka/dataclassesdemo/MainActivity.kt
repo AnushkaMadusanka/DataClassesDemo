@@ -38,6 +38,14 @@ class MainActivity : AppCompatActivity() {
 
         Log.i("MyTAG", "de structured $name is $age")
 
-        
+        data class Book(val name: String, val pages: Int){
+            val price = 34.5
+        }
+
+        val book = Book("MyStory",15)
+
+        Log.i("MyTAG"," ${book.name} has ${book.pages} pages. It's price is ${book.price}" )
+
+        Log.i("MyTAG",book.toString() )
     }
 }
