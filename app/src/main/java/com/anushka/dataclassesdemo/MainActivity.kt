@@ -40,6 +40,10 @@ class MainActivity : AppCompatActivity() {
 
         data class Book(val name: String, val pages: Int){
             val price = 34.5
+
+            override fun toString(): String {
+                return "Book(name=$name, pages=$pages, price=$price)"
+            }
         }
 
         val book = Book("MyStory",15)
@@ -47,5 +51,7 @@ class MainActivity : AppCompatActivity() {
         Log.i("MyTAG"," ${book.name} has ${book.pages} pages. It's price is ${book.price}" )
 
         Log.i("MyTAG",book.toString() )
+
+        book.
     }
 }
