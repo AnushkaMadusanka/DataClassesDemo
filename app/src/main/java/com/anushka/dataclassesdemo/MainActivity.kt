@@ -52,6 +52,27 @@ class MainActivity : AppCompatActivity() {
 
         Log.i("MyTAG",book.toString() )
 
-        book.
+        // comparing objects using equals
+
+        val book1 = Book("MyStory",15)
+        val book2 = Book("NewBook",35)
+
+        if(book.equals(book1)){
+            Log.i("MyTAG"," book and book1 are equal " )
+        }else{
+            Log.i("MyTAG"," book and book1 are not equal " )
+        }
+
+        if(book.equals(book2)){
+            Log.i("MyTAG"," book and book2 are equal " )
+        }else{
+            Log.i("MyTAG"," book and book2 are not equal " )
+        }
+
+        if(book1.equals(book2)){
+            Log.i("MyTAG"," book1 and book2 are equal " )
+        }else{
+            Log.i("MyTAG"," book1 and book2 are not equal " )
+        }
     }
 }
